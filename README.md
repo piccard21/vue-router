@@ -1,6 +1,6 @@
-# vue-webpack-simple
+# vue-router example
 
-> A Vue.js project
+> very simple example
 
 ## Build Setup
 

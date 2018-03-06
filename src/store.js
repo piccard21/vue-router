@@ -1,5 +1,5 @@
 export const a =  {
-  namespaced: true,
+    namespaced: true,
     state: {
         name: "piccard"
     },

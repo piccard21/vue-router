@@ -1,5 +1,5 @@
 export const b = {
-  namespaced: true,
+    namespaced: true,
     state: {
         sex: "male"
     },

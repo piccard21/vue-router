@@ -2,20 +2,23 @@
     <div>
         <div id="hello">
             <h3>Hello {{ name }}</h3>
+            <p>sex: {{ sex }}</p>
          </div>
          <input type="text" name="name" @input="setName($event.target.value)">
     </div>
 </template>
 
 <script>
-  // import { mapState, mapActions } from 'vuex';
+    import { mapGetters, mapMutations , mapActions } from 'vuex';
 
     export default { 
         computed: { 
           name() {
               return this.$store.getters['a/name']
-          }, 
-          // ...mapGetters(['name', 'sex'])
+          },  
+        ...mapGetters({
+            sex: 'b/sex'
+          })
         },
         methods: {
             setName(user) { 

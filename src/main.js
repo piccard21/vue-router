@@ -5,7 +5,7 @@ import Users from './components/Users.vue'
 import Hello from './components/Hello.vue'
 import VueRouter from 'vue-router'
 import Vuex from 'vuex'
-import {store} from './mainStore' 
+import {store} from './store/store' 
 
 Vue.use(Vuex);
 Vue.use(VueRouter); 

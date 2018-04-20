@@ -14,7 +14,7 @@
     export default { 
         computed: { 
           name() {
-              return this.$store.getters['a/name']
+              // return this.$store.getters['a/name']
           },  
         ...mapGetters({
             sex: 'b/sex'
@@ -22,7 +22,7 @@
         },
         methods: {
             setName(user) { 
-                this.$store.commit('a/setName', user);
+                // this.$store.commit('a/setName', user);
             }
         }
     }

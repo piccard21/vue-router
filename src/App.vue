@@ -64,7 +64,13 @@
 					add: 3
 				});
 			}
-		}
+		},
+		watch: {
+			'$route' (to, from) {
+				console.info("from", from);
+				console.info("to", to);
+			}
+		},
 	}
 </script>
 

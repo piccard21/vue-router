@@ -7,6 +7,9 @@ export default {
 		},
 		goForward () {
 			this.$router.go(1)
+		},
+		goHome() {
+			this.$router.push('/');
 		}
 	}
 }

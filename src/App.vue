@@ -26,12 +26,22 @@
 			<input type="button" :value="count" @click="increment">
 			<input type="button" :value="count" @click="incrementThree">
 		</p>
+
+
+		<p>
+			<input type="button" value="back" @click="goBack">
+			<input type="button" value="forward" @click="goForward">
+		</p>
 	</div>
 </template>
 
 <script>
+
+	import History from './mixins/History';
+
 	export default {
 		name: 'app',
+		mixins: [History],
 		data() {
 			return {
 				url: 'https://router.vuejs.org/en/'

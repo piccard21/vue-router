@@ -13,7 +13,7 @@
 	import {mapGetters} from 'vuex'
 
 	export default {
-		name: 'done',
+		name: 'Done',
 		computed: {
 			...mapGetters({
 				// doneTodos: state => state.doneTodos,

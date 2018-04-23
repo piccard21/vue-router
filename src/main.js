@@ -1,13 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Home from './components/Home.vue'
-import Users from './components/Users.vue'
-import Hello from './components/Hello.vue'
-import Done from './components/TodosDone.vue'
-import Open from './components/TodosOpen.vue'
 import VueRouter from 'vue-router'
 import Vuex from 'vuex'
 import {store} from './store/store'
+
+// lazy-loading
+const Home = () => import('./components/Home.vue')
+const Users = () => import('./components/Users.vue')
+const Hello = () => import('./components/Hello.vue')
+const Done = () => import('./components/TodosDone.vue')
+const Open = () => import('./components/TodosOpen.vue')
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
@@ -16,8 +18,8 @@ const routes = [
 	{ path: '/', component: Home},
 	{ path: '/users/:teamId', component: Users},
 	{ path: '/hello', component: Hello},
-	{ path: '/open', component: Done},
-	{ path: '/done', component: Open}
+	{ path: '/open', component: Open},
+	{ path: '/done', component: Done}
 ];
 
 const router = new VueRouter({

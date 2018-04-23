@@ -29,6 +29,7 @@
 
 
 		<p>
+			<button @click="goHome">Go Home</button>
 			<input type="button" value="back" @click="goBack">
 			<input type="button" value="forward" @click="goForward">
 		</p>

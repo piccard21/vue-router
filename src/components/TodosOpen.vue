@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h3>Finished</h3>
+		<h3>Open</h3>
 		<ul id="todos-open">
 			<li v-for="(todo, index) in open" :key="todo.id">
 				{{ todo.text }}

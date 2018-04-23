@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h3>Done</h3>
+		<h3>Finished</h3>
 		<ul id="todos-done">
 			<li v-for="(todo, index) in done" :key="todo.id">
 				{{ todo.text }}

@@ -1,30 +1,19 @@
 <template>
     <div>
-        <div id="hello">
-            <h3>Hello {{ name }}</h3>
-            <p>sex: {{ sex }}</p>
-         </div>
-         <input type="text" name="name" @input="setName($event.target.value)">
+	    <input v-model="message" placeholder="edit me">
+	    <p>Message is: {{ message }}</p>
     </div>
 </template>
 
 <script>
-    import { mapGetters, mapMutations , mapActions } from 'vuex';
-
-    export default { 
-        computed: { 
-          name() {
-              // return this.$store.getters['a/name']
-          },  
-        ...mapGetters({
-            sex: 'b/sex'
-          })
-        },
-        methods: {
-            setName(user) { 
-                // this.$store.commit('a/setName', user);
-            }
-        }
+    export default {
+	    data() {
+		    return {
+			    message: '',
+		    }
+	    },
+        computed: {},
+        methods: {}
     }
 </script>
 
